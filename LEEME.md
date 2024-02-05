@@ -10,16 +10,18 @@ He decidido compartir este bot con la comunidad, con la esperanza de que pueda s
 Sigue estos pasos para configurar y ejecutar tu bot de Telegram en Node.js:
 
 #### Paso 1: Clonar el Repositorio
+```
 git clone https://github.com/RonAdames/telegram_flowise.git
-
+```
 #### Paso 2: Navegar al Directorio del Proyecto
+```
 cd telegram_flowise
-
+```
 #### Paso 3: Instalar Dependencias
 Asegúrate de tener Node.js y npm instalados. Luego, instala los paquetes necesarios:
-
+```
 npm install
-
+```
 #### Paso 4: Crear un Bot de Telegram en BotFather
 Abre Telegram y busca el bot "BotFather".
 Inicia un chat con BotFather y usa el comando /newbot para crear un nuevo bot.
@@ -35,9 +37,9 @@ Reemplaza tu API_URL y API_TOKEN.
 
 #### Paso 6: Ejecutar el Bot
 Ahora es el momento de iniciar tu bot.
-
+```
 npm start
-
+```
 #### Paso 7: Probar el Bot
 Abre Telegram y busca tu bot usando el nombre de usuario proporcionado durante la creación. Inicia un chat con el bot y envía un comando de prueba para asegurarte de que responda correctamente.
 ¡Felicidades! Tu bot de Telegram está instalado y funcionando correctamente.
@@ -48,8 +50,8 @@ Recuerda personalizar las instrucciones según la estructura de tu proyecto y lo
 
 ### Si necesitas instalar el archivo Docker utilizando la construcción de Docker
 ejecuta el siguiente comando
-
+```
 docker build -t telegram-bot .
 docker run -p 3000:3000 telegram-bot
-
+```
 ### ¡Espero que lo disfrutes y feliz programación de bots! 🤖
