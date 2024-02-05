@@ -57,4 +57,12 @@ If you encounter any issues, refer to the project's documentation or seek help f
 
 Remember to customize the instructions according to your project structure and specific setup steps. Additionally, provide any additional information or troubleshooting steps if needed.
 
+## Install the Dockefile using the docker build
+
+run de following command
+
+docker build -t telegram-bot .
+docker run -p 3000:3000 telegram-bot
+
+
 I hope you enjoy it and happy botting! 🤖
