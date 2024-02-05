@@ -13,7 +13,7 @@ git clone https://github.com/RonAdames/TelegramBotFlowise.git
 
 cd TelegramBotFlowise
 
-##Step 3: Install Dependencies
+## Step 3: Install Dependencies
 
 Ensure that you have Node.js and npm installed. Then, install the required packages:
 
@@ -26,23 +26,25 @@ Start a chat with BotFather and use the /newbot command to create a new bot.
 Follow the instructions to set a name and username for your bot.
 Once the bot is created, note down the generated API token.
 
-##Step 5: Configure the Bot
+## Step 5: Configure the Bot
 
 Open the project in your preferred code editor.
 Locate the .env.example file and rename it to .env.
 Replace the placeholder TELEGRAM_BOT_TOKEN with the API token obtained from BotFather.
-at this point I asume you have you chatflow installed on Flowise.
-Replace the placeholder API_URL and API_TOKEN
+At this point I asume you have flowise running, so get your flowise api url and api token.
+Replace your API_URL and API_TOKEN
 
 ## Step 6: Run the Bot
+Now you it's time to start your bot.
 
 npm start
 
 ## Step 7: Test the Bot
+
 Open Telegram and search for your bot using the username you provided during creation. Start a chat with the bot and send a test command to ensure it responds correctly.
 
 Congratulations! Your Telegram bot is successfully installed and running.
 
 If you encounter any issues, refer to the project's documentation or seek help from the community.
 
-Happy botting! 🤖
+I hope you enjoy it and happy botting! 🤖
