@@ -2,6 +2,10 @@
 Flowise Telegram Bot 🤖 with Langchain Technology
 This Telegram bot leverages Flowise API calls, providing a myriad of possibilities through Langchain technology.
 
+<p align="center">
+  <img width="600" src="https://imgur.com/7auHvfW">
+</p>
+
 As a non-coder, I've observed various Telegram bots integrating with n8n, Make, and Activepieces. However, I believe that fewer integrations can lead to fewer issues. Therefore, I embarked on creating my own Telegram bot using Flowise, with assistance from ChatGPT and my limited programming knowledge, until I successfully got it up and running.
 
 I've decided to share this bot with the community, in the hopes that it may undergo further modifications. If you'd like to contribute to its improvement, you are more than welcome!
@@ -11,16 +15,20 @@ I've decided to share this bot with the community, in the hopes that it may unde
 Follow these steps to set up and run your Telegram bot on Node.js:
 
 #### Step 1: Clone the Repository
+
+```
 git clone https://github.com/RonAdames/telegram_flowise.git
+
+```
 
 #### Step 2: Navigate to the Project Directory
 cd telegram_flowise
 
 #### Step 3: Install Dependencies
 Ensure that you have Node.js and npm installed. Then, install the required packages:
-
+```
 npm install
-
+```
 #### Step 4: Create a Telegram Bot on BotFather
 Open Telegram and search for the "BotFather" bot.
 Start a chat with BotFather and use the /newbot command to create a new bot.
@@ -36,9 +44,9 @@ Replace your API_URL and API_TOKEN
 
 #### Step 6: Run the Bot
 Now you it's time to start your bot.
-
+```
 npm start
-
+```
 #### Step 7: Test the Bot
 Open Telegram and search for your bot using the username you provided during creation. Start a chat with the bot and send a test command to ensure it responds correctly.
 Congratulations! Your Telegram bot is successfully installed and running.
@@ -49,10 +57,10 @@ Remember to customize the instructions according to your project structure and s
 
 ### If you need to install the Dockefile using the docker build
 run de following command
-
+```
 docker build -t telegram-bot .
 docker run -p 3000:3000 telegram-bot
-
+```
 
 
 ### I hope you enjoy it and happy botting! 🤖
