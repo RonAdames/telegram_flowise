@@ -1,18 +1,19 @@
 const axios = require('axios');
 require('dotenv').config();  // Load environment variables from a .env file
+const TelegramBot = require('node-telegram-bot-api');
 
-// Replace or fill the env file with your TELEGRAM_BOT_TOKEN
+// Telegram bot token (replace it with your own token)
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
-// Replace with your API URL
+// API URL
 const API_URL = process.env.API_URL;
 
 // Function to make the query
 async function query(data) {
     try {
-        const response = await axios.post(API_URL, data, { //Replace the API_URL or fill the env file
+        const response = await axios.post(API_URL, data, {
             headers: {
-                Authorization: `Bearer ${process.env.API_TOKEN}`, // Replace the API_TOKEN or fill the env file
+                Authorization: `Bearer ${process.env.API_TOKEN}`,
                 'Content-Type': 'application/json',
             },
         });
@@ -53,11 +54,13 @@ async function handleTelegramMessage(message) {
 }
 
 // Configure the Telegram bot
-const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 
 // Handle Telegram messages
 bot.on('message', handleTelegramMessage);
 
+// Port to listen on (uses the port defined by the PORT environment variable or defaults to port 3000)
+const port = process.env.PORT || 3000;
+
 // Startup message
-console.log('Telegram bot started. Waiting for messages...');
+console.log(`Telegram bot started. Listening on port ${port}...`);
