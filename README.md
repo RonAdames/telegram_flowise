@@ -11,10 +11,10 @@ I've decided to share this bot with the community, in the hopes that it may unde
 Follow these steps to set up and run your Telegram bot on Node.js:
 
 ### Step 1: Clone the Repository
-git clone https://github.com/RonAdames/Telegram_Bot_Flowise.git
+git clone https://github.com/RonAdames/telegram_flowise.git
 
 ### Step 2: Navigate to the Project Directory
-cd Telegram_Bot_Flowise
+cd telegram_flowise
 
 ### Step 3: Install Dependencies
 Ensure that you have Node.js and npm installed. Then, install the required packages:
