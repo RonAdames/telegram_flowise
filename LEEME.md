@@ -2,7 +2,7 @@
 Bot de Telegram Flowise 🤖 con tecnología Langchain
 Este bot de Telegram aprovecha las llamadas a la API de Flowise, proporcionando una variedad de posibilidades a través de la tecnología Langchain.
 
-Como no programador, he observado varios bots de Telegram integrándose con n8n, Make y Activepieces. Sin embargo, creo que menos integraciones pueden llevar a menos problemas. Por lo tanto, me embarqué en la creación de mi propio bot de Telegram utilizando Flowise, con la ayuda de ChatGPT y mis conocimientos limitados de programación, hasta que logré ponerlo en funcionamiento con éxito.
+Como no coder, he observado varios bots de Telegram integrándose con n8n, Make y Activepieces. Sin embargo, creo que menos integraciones pueden llevar a menos problemas. Por lo tanto, me embarqué en la creación de mi propio bot de Telegram utilizando Flowise, con la ayuda de ChatGPT y mis conocimientos limitados de programación, hasta que logré ponerlo en funcionamiento con éxito.
 
 He decidido compartir este bot con la comunidad, con la esperanza de que pueda sufrir más modificaciones. ¡Si deseas contribuir a su mejora, eres más que bienvenido!
 
@@ -23,17 +23,17 @@ Asegúrate de tener Node.js y npm instalados. Luego, instala los paquetes necesa
 npm install
 ```
 #### Paso 4: Crear un Bot de Telegram en BotFather
-Abre Telegram y busca el bot "BotFather".
-Inicia un chat con BotFather y usa el comando /newbot para crear un nuevo bot.
-Sigue las instrucciones para establecer un nombre y un nombre de usuario para tu bot.
-Una vez creado el bot, anota el token de API generado.
+- Abre Telegram y busca el bot "BotFather".
+- Inicia un chat con BotFather y usa el comando /newbot para crear un nuevo bot.
+- Sigue las instrucciones para establecer un nombre y un nombre de usuario para tu bot.
+- Una vez creado el bot, anota el token de API generado.
 
 #### Paso 5: Configurar el Bot
-Abre el proyecto en tu editor de código preferido.
-Localiza el archivo .env.example y cámbiale el nombre a .env.
-Reemplaza el marcador de posición TELEGRAM_BOT_TOKEN con el token de API obtenido de BotFather.
-En este punto, asumo que tienes Flowise en funcionamiento; de lo contrario, consulta https://flowiseai.com para obtener tu URL y token de API de Flowise.
-Reemplaza tu API_URL y API_TOKEN.
+- Abre el proyecto en tu editor de código preferido.
+- Localiza el archivo .env.example y cámbiale el nombre a .env.
+- Reemplaza el marcador de posición TELEGRAM_BOT_TOKEN con el token de API obtenido de BotFather.
+- En este punto, asumo que tienes Flowise en funcionamiento; de lo contrario, consulta https://flowiseai.com para obtener tu URL y token de API de Flowise.
+- Reemplaza tu API_URL y API_TOKEN.
 
 #### Paso 6: Ejecutar el Bot
 Ahora es el momento de iniciar tu bot.
