@@ -1,6 +1,9 @@
 ## Telegram Bot Flowise
 Flowise Telegram Bot 🤖 with Langchain Technology
 This Telegram bot leverages Flowise API calls, providing a myriad of possibilities through Langchain technology.
+![alt text]([image url](https://ecommpay.com/uploads/2022/10/25/telegram-bot.png) "Telegram Bot")
+
+
 
 As a non-coder, I've observed various Telegram bots integrating with n8n, Make, and Activepieces. However, I believe that fewer integrations can lead to fewer issues. Therefore, I embarked on creating my own Telegram bot using Flowise, with assistance from ChatGPT and my limited programming knowledge, until I successfully got it up and running.
 
