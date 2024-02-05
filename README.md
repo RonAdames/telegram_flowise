@@ -39,7 +39,7 @@ Once the bot is created, note down the generated API token.
 Open the project in your preferred code editor.
 Locate the .env.example file and rename it to .env.
 Replace the placeholder TELEGRAM_BOT_TOKEN with the API token obtained from BotFather.
-At this point I asume you have flowise running, so get your flowise api url and api token.
+At this point I asume you have flowise running otherwise take a look at https://flowiseai.com, so get your flowise api url and api token.
 Replace your API_URL and API_TOKEN
 
 ## Step 6: Run the Bot
