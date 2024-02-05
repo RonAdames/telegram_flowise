@@ -18,8 +18,9 @@ git clone https://github.com/RonAdames/telegram_flowise.git
 ```
 
 #### Step 2: Navigate to the Project Directory
+```
 cd telegram_flowise
-
+```
 #### Step 3: Install Dependencies
 Ensure that you have Node.js and npm installed. Then, install the required packages:
 ```
