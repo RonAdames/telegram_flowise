@@ -1,0 +1,22 @@
+{
+    "name": "telegram-bot-flowise",
+    "version": "1.0.0",
+    "description": "A Telegram bot using nodejs to get response from Flowise AI API",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "telegram",
+        "bot",
+        "axios",
+        "api"
+    ],
+    "author": "Ronald Adames",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.6.7",
+        "dotenv": "^16.4.1",
+        "node-telegram-bot-api": "^0.64.0"
+    }
+}
