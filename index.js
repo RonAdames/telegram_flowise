@@ -39,9 +39,9 @@ async function handleTelegramMessage(message) {
         // Extract the text from the JSON response
         const responseText = result.text || 'Could not retrieve response text';
         const escapedResponseText = responseText
-          .replace(/-/g, '\\-')
-          .replace(/[\.|!|#|(|)]/g, '\\$&'); // Escape dot (.), escape (!) and hyphen (-) characters
-
+	    .replace(/-/g, '\\-')
+	    .replace(/[\.|!|#|(|)|\{|\}|=|_|\+]/g, '\\$&')
+	    .replace(/\*\*/g, '');
 
         // Log for outgoing message
         console.log(`Response: ${escapedResponseText}`);
@@ -49,14 +49,24 @@ async function handleTelegramMessage(message) {
         // Send the response to the Telegram chat
         await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
             chat_id: chatId,
-            text: escapedResponseText, // Use the escaped response text
-            parse_mode: 'MarkdownV2', // Try using MarkdownV2
+            text: escapedResponseText,
+            parse_mode: 'MarkdownV2',
         });
         console.log(`Sent response to Telegram chat ${chatId}`);
     } catch (error) {
         // Handle errors
         console.error('Error handling Telegram message:', error);
         console.error('Error details:', error.response? error.response.data : null);
+
+        // Send a fallback message without formatting
+        try {
+            await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                chat_id: chatId,
+                text: 'Sorry, there was an error processing your message. Please try again.',
+            });
+        } catch (fallbackError) {
+            console.error('Error sending fallback message:', fallbackError);
+        }
     }
 }
 
@@ -71,4 +81,3 @@ const port = process.env.PORT || 3000;
 
 // Startup message
 console.log(`Telegram bot started. Listening on port ${port}...`);
-
